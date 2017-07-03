@@ -181,8 +181,8 @@ var saveAs = saveAs || (function(view) {
 
 if (typeof define === 'function' && define.amd) {
 	define(function () {
-		return saveAs
+		return { saveAs: saveAs }
 	})
 } else if (typeof module !== 'undefined' && module.exports) {
-	module.exports = saveAs
+	module.exports = { saveAs: saveAs }
 }
